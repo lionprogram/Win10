@@ -1,0 +1,80 @@
+body{
+	background: url('../assets/background.png');
+	background-size: cover;
+	margin: 0;
+}
+footer {
+	width: 100%;
+	height: 30px;
+	background: transparent;
+    backdrop-filter: blur(140px);
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	
+}
+.left,.right{
+	display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+footer div{
+	/*margin: 0 7px;*/
+	padding: 6px 9px;
+	
+}
+.left div:hover , .right div:hover{
+	background-color: #bfa1a166;
+	
+}
+.Cortana{
+	width: 18px;
+    height: 18px;
+    
+}
+.TaskView img{
+	width: 18px;
+    padding: 0;
+    margin: 0;
+	transform: scale(1.3);
+}
+.TaskView:hover img{
+	transform: scale(1.3);
+}
+.Network{
+	padding: 6px 4px;
+}
+.Network img, .Speaker img{
+	width: 17px;
+}
+.Txt{
+	font-family: system-ui;
+    color: #fff;
+    font-size: 11.5px;
+}
+.ENG{
+	padding: 6px 7px;
+}
+.Message{
+	padding: 4px 3px;
+    margin-right: 8px;
+}
+.Message img{
+	
+}
+.Hide{
+	border-left: 1px solid #fff;
+    margin: 0;
+    padding: 2px;
+    opacity: 0.5;
+}
+.ShowH{
+	padding: 6px 6px;
+}
+.Speaker{
+	padding: 6px 3px;
+}
