@@ -2,8 +2,17 @@
 <head>
 	<title>Windows 10 Calculator</title>
 	<link rel="stylesheet" href="style/style.css" />
+	
 </head>
 <body>
+<section class="SpeakerBox">
+<h3>Speakers (High Definition Audio Device)</h3>
+<div class="SpeakerContent">
+	<span class="SpeakerIcon"><img src="assets/SpeakerW.png" alt="speaker"/></span>
+	<span class="RangeSpeaker"><input oninput="range_Value(this.value)" id="rangeValue" type="range"/></span>
+	<span id="valum">100</span>
+</div>
+</section>
 <footer>
 	<div class="left">
 		<div class="startMenu"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" style="enable-background:new 0 0 480 480;width: 18px;" version="1.1" viewBox="0 0 480 480" xml:space="preserve"><g><g><path d="M0.2,224L0,68l192-26.1V224H0.2z M224,37.2L479.9,0v224H224V37.2z M480,256l-0.1,224L224,444V256H480z M192,439.9     L0.2,413.6l0-157.6H192V439.9z" style="&#10;    fill: #fff;&#10;    width: 31px;&#10;"/></g></g></svg></div>
@@ -14,13 +23,16 @@
 	<div class="right">
 		<div class="ShowH"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="13" height="14" viewBox="0 0 256 256" xml:space="preserve" style="&#10;    transform: rotate(270deg);&#10;"><desc>Created with Fabric.js 1.7.22</desc><defs></defs><g transform="translate(128 128) scale(0.72 0.72)" style=""><g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)"><path d="M 24.25 90 c -0.896 0 -1.792 -0.342 -2.475 -1.025 c -1.367 -1.366 -1.367 -3.583 0 -4.949 L 60.8 45 L 21.775 5.975 c -1.367 -1.367 -1.367 -3.583 0 -4.95 c 1.367 -1.366 3.583 -1.366 4.95 0 l 41.5 41.5 c 1.367 1.366 1.367 3.583 0 4.949 l -41.5 41.5 C 26.042 89.658 25.146 90 24.25 90 z" style="stroke: none;stroke-width: 1;stroke-dasharray: none;stroke-linecap: butt;stroke-linejoin: miter;stroke-miterlimit: 10;fill: rgb(255 255 255);fill-rule: nonzero;opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/></g></g></svg></div>
 		<div class="Network" title="Network Internet access"><img src="assets/Network.png"/></div>
-		<div class="Speaker"><img src="assets/SpeakerW.png"/></div>
+		<div class="Speaker" onclick="speakerBox()"><img src="assets/SpeakerW.png" alt="speaker"/></div>
 		<div class="Txt ENG">ENG</div>
 		<div class="Txt DataTime">8:06 AM</div>
 		<div class="Message"><img src="assets/Notifaction.PNG" alt="Notifaction" /></div>
 		<div class="Hide"></div>
 	</div>
 </footer>
+<script type='text/javascript' src='script/script.js'>
+
+</script>
 </body>
 
 </html>
