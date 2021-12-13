@@ -228,3 +228,18 @@ footer div{
 .RangeSpeaker input[type=range]:focus::-ms-fill-upper {
   background: #3071A9;
 }
+
+/*Desktop Environment: */
+.DesktopEnvironment{
+	width: 100% !important;
+    height: calc(100% - 30px) !important;
+}
+
+/*Style selectorDesktop */
+
+#selectorDesktop{
+	position: fixed;
+	
+	border: 1px solid #3f51b5;
+    background-color: #2196f363;
+}

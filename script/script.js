@@ -4,6 +4,7 @@ let Speaker = document.getElementsByClassName('SpeakerBox')[0];
 let Valum = document.getElementById('valum');
 let rangeValue = document.getElementById('rangeValue');
 let DateTime = document.getElementsByClassName('DataTime')[0];
+let selectorDesktop = document.getElementById('selectorDesktop');
 //All Active Box is Collapsed:
 document.body.onclick = (e)=>{
 	if(e.target.parentNode.getAttribute('class') + e.target.getAttribute('class') == "Speakernull" || e.target.parentNode.getAttribute('class') + e.target.getAttribute('class') == "rightSpeaker"){
@@ -44,3 +45,36 @@ setInterval(function DateClock(){
 	DateTime.innerHTML = hours+":"+date.getMinutes()+" "+ampm;
 	
 },1000);
+
+
+//Cordinate Mouse:
+//Cord Variables:
+let mousePos = false;
+let clX;
+let clY;
+function mousepos(tr,event){
+	mousePos = tr;
+	if(event != null){
+		clX = event.clientX;
+		clY = event.clientY;
+		selectorDesktop.style.top = event.clientY;
+		selectorDesktop.style.left = event.clientX;
+		
+	}
+}
+function Cord(event){
+	//mousepos = mousepos1;
+	
+	if(mousePos == true){
+
+		selectorDesktop.style.width = event.offsetX - clX;
+		selectorDesktop.style.height = event.offsetY - clY;
+		
+		console.log(event.offsetY+" - "+event.offsetX);
+	}else{
+		selectorDesktop.style.width = event.offsetX  * 0;
+	    selectorDesktop.style.height = event.offsetY *0;
+		
+		
+	}
+}
